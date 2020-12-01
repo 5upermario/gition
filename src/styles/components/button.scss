@@ -1,0 +1,14 @@
+button {
+	background-color: $background-color;
+	color: $base-color;
+	padding: 8px 12px;
+	border: 1px solid $base-color;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:hover, &:focus {
+		color: white;
+		background-color: $base-color;
+	}
+}

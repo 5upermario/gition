@@ -1,0 +1,8 @@
+a {
+	color: $base-color-2;
+	text-decoration: none;
+
+	&.router-link-active, &.router-link-exact-active {
+		color: $base-color;
+	}
+}

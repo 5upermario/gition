@@ -1,0 +1,33 @@
+@import './variables';
+@import './components/card.scss';
+@import './components/dialog.scss';
+@import './components/list.scss';
+@import './components/links.scss';
+@import './components/navbar.scss';
+@import './components/sidebar.scss';
+@import './components/button.scss';
+@import './components/select.scss';
+@import './components/spacing.scss';
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $base-color;
+	background-color: $background-color;
+	padding: 50px 10px 10px 10px;
+}

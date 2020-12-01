@@ -1,0 +1,49 @@
+ul.list-group {
+	border: 1px solid $base-color;
+	color: $base-color;
+	border-radius: 14px;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 0;
+	text-align: left;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		border-top: 1px solid $base-color;
+	}
+
+	li {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	& > li {
+		border: 1px solid $base-color;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $base-color;
+		}
+
+		& > ul {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		& > ul > li {
+			padding-left: 20px;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid $base-color;
+			}
+
+			& > ul > li {
+				padding-left: 30px;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid $base-color;
+				}
+			}
+		}
+	}
+}

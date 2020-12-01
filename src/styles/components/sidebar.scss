@@ -1,0 +1,16 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -327px;
+	width: 325px;
+	transition: left .3s ease-in-out;
+	border-right: 1px solid $base-color;
+	z-index: 900;
+	padding-top: 60px;
+	background-color: $background-color;
+
+	&.open {
+		left: 0;
+	}
+}
